@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liquidity Vault UI v2 (Redesign)</title>
+    <style>
+      :root { --bg: #0b1220; --card: #101a2b; --accent: #3b82f6; --text: #cbd5e1; }
+      body { background: var(--bg); color: var(--text); margin: 0; }
+      .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 16px; }
+      .card { background: var(--card); border-radius: 12px; padding: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+      input, button { padding: 10px 12px; border-radius: 10px; border: 1px solid #1f2a44; background: #0f172a; color: var(--text); }
+      button { background: var(--accent); border: none; color: white; cursor: pointer; }
+      .row { display: flex; gap: 8px; align-items: center; }
+      h1, h2, h3 { margin-top: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
